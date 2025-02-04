@@ -1,0 +1,68 @@
+.container {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(27, 46, 56);
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input {
+    background-color: rgb(52, 84, 102);
+    color: aliceblue;
+    border: none;
+    border-radius: 40px;
+    padding: 20px;
+    outline: none;
+}
+
+form input[type=submit] {
+    cursor: pointer;
+}
+
+form input::placeholder {
+    color: rgba(255, 255, 255, 0.678);
+}
+
+form input:hover {
+    background-color: rgb(61, 95, 114);
+    transform: scale(100.5%);
+    transition: 0.1s;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.usuarios-cadastrados {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(27, 46, 56);
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    font-weight: 500;
+    position: relative;
+}
