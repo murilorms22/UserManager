@@ -4,6 +4,7 @@
     flex-direction: column;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 35px;
     background-color: rgb(27, 46, 56);
     padding: 40px;
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -58,11 +59,20 @@ img {
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 15px;
     background-color: rgb(27, 46, 56);
     padding: 30px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 30px;
     font-weight: 500;
     position: relative;
+    font-weight: bold;
+}
+
+& p {
+    margin-left: 20px;
+}
+
+& span {
+    font-weight: 400;
 }
