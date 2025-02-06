@@ -31,14 +31,20 @@ function Home() {
     getUsuarios()
   }, [])
 
+  async function deleteUsuario(id){
+    await api.delete(`/usuarios/${id}`, 
+
+      getUsuarios()
+  )}
+
   return (
     <div className='Home'>
       <div className='container'>
         <h1>Cadastro de usuário</h1>
         <form>
-          <input type="text" placeholder='Nome' ref={InputName} />
-          <input type="number" placeholder='Idade' ref={InputIdade} />
-          <input type="email" placeholder='E-mail' ref={InputEmail} />
+          <input type="text" placeholder='Nome' required ref={InputName} />
+          <input type="number" placeholder='Idade' required ref={InputIdade} />
+          <input type="email" placeholder='E-mail' required ref={InputEmail} />
           <input type="submit" onClick={createUsuario}/>
         </form>
       </div>
@@ -51,9 +57,10 @@ function Home() {
             <p>Idade: <span>{usuario.age}</span></p>
             <p>E-mail: <span>{usuario.email}</span></p>
           </div>
-          <img src={Lixo} />
+          <button onClick={() => deleteUsuario(usuario.id)}>
+          <img src={Lixo}/>
+          </button>
         </div>
-
       ))}
 
 
